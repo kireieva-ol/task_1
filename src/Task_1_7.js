@@ -1,44 +1,29 @@
 import React from 'react';
+import reactDom from 'react-dom';
 
 class Task_1_7 extends React.Component {
-    constructor(props) {
-      super(props)
-      this.state = {
-        bgColor: ""
-      }
+    // constructor(props) {
+    //   super(props)}
+
+    reRender = () => {
+        this.forceUpdate();     
     }
 
     render() {
-        var color = "#44014C";
-        function handleClick(e) {
-            e.preventDefault();
-            console.log('Посилання було натиснуте.');
-            color = "#bbbbbb";
+        let bgColor = '#';
+        for(let i = 0; i < 6; i++) {
+            bgColor += Math.floor(Math.random()*16).toString(16);
         }
+        
         return (
-            <div onClick = {handleClick}
+            <div onClick = {this.reRender}
                  style = { {
-                            backgroundColor: color,
+                            backgroundColor: bgColor,
                             width: "100px",
                             height: "75px"
                         }} >  </div>
         );
     }
-
-    // render() {
-    //     this.color = "#44014C";
-    //     console.log('render() > ');
-    //     return React.createElement(
-    //         "div",
-    //         { style: {
-    //             backgroundColor: this.color,
-    //             width: "100px",
-    //             height: "75px"
-    //         } },
-    //         `Placeholder`
-    //       );
-    // }
-  
 }
   
 export default Task_1_7;
