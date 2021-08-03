@@ -2,6 +2,7 @@ import React from 'react';
 
 export default function MenuItem(props) {
     
+    
         return (
             <>
             <div> <a href={"#main"}>Главная</a></div> 
