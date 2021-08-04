@@ -1,3 +1,8 @@
+#chessboard {
+    min-width: 800px;
+    max-width: 800px;
+}
+
 .black {
     width: 100px;
     height: 100px;
