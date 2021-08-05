@@ -1,9 +1,9 @@
 import React from 'react';
-import './Task_1_8.css';
+import './style.css';
 import Cells from './Cells.js';
 
 
-class Task_1_8 extends React.Component {
+class Task_2_5 extends React.Component {
     constructor(props) {
       super(props)
     }
@@ -18,6 +18,7 @@ class Task_1_8 extends React.Component {
           }
           
          } 
+        console.log(result);
 
       return (
           <div id='chessboard'>  
@@ -28,5 +29,5 @@ class Task_1_8 extends React.Component {
     }
   }
   
-export default Task_1_8;
+export default Task_2_5;
 

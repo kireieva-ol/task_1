@@ -1,19 +1,32 @@
 import React from 'react';
 import NotificationComponent from "./NotificationComponent.js";
+import { data } from './data.json';
 
 class Task_2_2 extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
-      <div>
-        {/* <NotificationComponent notifyType={app.data.msg} /> */}
 
-        Текст текст текст еще текст и еще текст и снова текст
-        <NotificationComponent notifyType="success" />и снова текст и опять
-        текст{" "}
-        <NotificationComponent notifyType="error">ошибка</NotificationComponent>
-        текст текст текст текст (уже устал писать слово текст) текст и снова
-        текст и опять текст, неожиданно но текст и т.д.
-      </div>
+      <>
+              {data.map((item, index) => <NotificationComponent key={index} notifyType={item.notifyType} notificationText={item.notificationText} />)}
+          </>
+
+
+
+
+      // <div>
+      //   {/* <NotificationComponent notifyType={app.data.msg} /> */}
+
+      //   Текст текст текст еще текст и еще текст и снова текст
+      //   <NotificationComponent notifyType="success" >и снова текст и опять </NotificationComponent>
+      //   текст{" "}
+      //   <NotificationComponent notifyType={data.notificationText}>ошибка</NotificationComponent>
+      //   текст текст текст текст (уже устал писать слово текст) текст и снова
+      //   текст и опять текст, неожиданно но текст и т.д.
+      // </div>
     );
   }
 }
