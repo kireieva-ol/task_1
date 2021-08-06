@@ -15,6 +15,9 @@ import Task_2_4 from './Task_2/task_2_4/index.js';
 import Task_2_5 from './Task_2/task_2_5/index.js';
 
 import Task_3_1 from './Task_3/task_3_1/index.js';
+import Task_3_2 from './Task_3/task_3_2/index.js';
+import Task_3_3 from './Task_3/Task_3_3.js';
+
 import reportWebVitals from './reportWebVitals';
 
 const fnc = () => console.log('Вы нажали на кнопку')
@@ -29,13 +32,15 @@ ReactDOM.render(
     {/* <Task_1_8 /> */}
 
     {/* <Task_2_1 /> */}
-    {/* <Task_2_2 status="success" /> */}
     {/* <Task_2_2 /> */}
     {/* <Task_2_3 logThis={fnc} /> */}
     {/* <Task_2_4 /> */}
     {/* <Task_2_5 /> */}
 
-    <Task_3_1 />
+    {/* <Task_3_1 /> */}
+    <Task_3_2 />
+    {/* <Task_3_3 logThis={fnc} /> */}
+
   </React.StrictMode>,
   document.getElementById('root')
 );
