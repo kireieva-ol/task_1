@@ -17,6 +17,7 @@ import Task_2_5 from './Task_2/task_2_5/index.js';
 import Task_3_1 from './Task_3/task_3_1/index.js';
 import Task_3_2 from './Task_3/task_3_2/index.js';
 import Task_3_3 from './Task_3/Task_3_3.js';
+import Task_3_5 from './Task_3/task_3_5/index.js';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -38,8 +39,9 @@ ReactDOM.render(
     {/* <Task_2_5 /> */}
 
     {/* <Task_3_1 /> */}
-    <Task_3_2 />
+    {/* <Task_3_2 /> */}
     {/* <Task_3_3 logThis={fnc} /> */}
+    <Task_3_5 />
 
   </React.StrictMode>,
   document.getElementById('root')
